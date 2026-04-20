@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-navy-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornerstone Automations | Process-First Manufacturing Solutions</title>
+    <meta name="description" content="We fix the manual work, data silos, and missing links that standard ERP software leaves behind.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1a2235',
+                            900: '#111827',
+                            950: '#0a0f18',
+                            975: '#05080c', // Deeper contrast layer
+                        },
+                        brand: {
+                            400: '#fccc62',
+                            500: '#f9b52a', // Logo Gold Solid
+                            600: '#e09e1f', // Logo Gold Darker
+                            900: '#6b4907',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0f18; color: #e2e8f0; }
+        h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Outfit', sans-serif; }
+        
+        /* Glassmorphism utilities */
+        .glass { background: rgba(10, 15, 24, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-brand { background: rgba(249, 181, 42, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(249, 181, 42, 0.15); }
+        
+        .text-glow { text-shadow: 0 0 25px rgba(249, 181, 42, 0.5); }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #05080c; }
+        ::-webkit-scrollbar-thumb { background: #1a2235; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f9b52a; }
+        
+        .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%); } /* Generic placeholder for dynamic clips */
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-navy-950">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-500" id="navbar">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo Block -->
+                <div class="flex-shrink-0 flex items-center gap-4 cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <img src="logo.png" alt="Cornerstone Automations Logo" class="h-12 w-auto transition-transform duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(249,181,42,0.4)]">
+                    <div class="flex flex-col justify-center">
+                        <span class="font-display font-black text-xl text-white tracking-widest leading-none">CORNERSTONE</span>
+                        <span class="font-sans font-semibold text-[10px] text-brand-500 tracking-[0.3em] uppercase mt-1">Automations</span>
+                    </div>
+                </div>
+                
+                <!-- Links -->
+                <div class="hidden md:flex space-x-12">
+                    <a href="#ethos" class="text-slate-400 hover:text-brand-400 text-xs tracking-widest uppercase font-bold transition-all">Ethos</a>
+                    <a href="#capabilities" class="text-slate-400 hover:text-brand-400 text-xs tracking-widest uppercase font-bold transition-all">Capabilities</a>
+                    <a href="#impact" class="text-slate-400 hover:text-brand-400 text-xs tracking-widest uppercase font-bold transition-all">Impact</a>
+                </div>
+                
+                <!-- CTA -->
+                <div class="hidden md:flex">
+                    <a href="#contact" class="group relative px-6 py-3 font-bold text-xs uppercase tracking-widest text-navy-950 bg-brand-500 overflow-hidden">
+                        <div class="absolute inset-0 w-full h-full bg-white/20 transition-all duration-300 ease-out transform -translate-x-full group-hover:translate-x-0"></div>
+                        <span class="relative flex items-center gap-2">Initiate Audit <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
+        <!-- Abstract Tech Background generated by AI -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero_bg.png" alt="Industrial Data Flow" class="w-full h-full object-cover opacity-20 object-center mix-blend-screen mix-blend-lighten">
+            <!-- Gradients to blend text -->
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-975 via-transparent to-navy-950/80"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-[2px] w-12 bg-brand-500 shadow-[0_0_10px_rgba(249,181,42,0.8)]"></div>
+                    <span class="text-brand-500 text-[11px] font-mono font-bold tracking-[0.25em] uppercase">Process Engineering // System Architecture</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-display font-black text-white leading-[1.05] tracking-tight mb-8">
+                    Your systems can't <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600 text-glow">scale</span><br>
+                    until the process<br>
+                    runs itself.
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed mb-12 border-l-2 border-brand-900/50 pl-6">
+                    We engineer intelligent, scalable automation systems that standard off-the-shelf software cannot provide. Native AI integrations. Autonomous workflows. Zero manual data entry.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#contact" class="group relative px-8 py-5 text-sm uppercase tracking-widest text-brand-500 border border-brand-500 overflow-hidden font-bold">
+                        <div class="absolute inset-0 w-full h-full bg-brand-500/10 transition-all duration-300 transform scale-y-0 group-hover:scale-y-100 origin-bottom"></div>
+                        <span class="relative">Book a Process Debt Audit</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tech Specs Banner Overlay -->
+        <div class="absolute bottom-0 left-0 w-full border-t border-white/5 bg-navy-975/80 backdrop-blur-md hidden lg:block z-20">
+            <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between text-[10px] font-mono text-slate-500 tracking-widest font-bold">
+                <div class="flex gap-12">
+                    <span class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-brand-500 rounded-full animate-pulse"></div> [ SYS.STAT ] ACTIVE</span>
+                    <span>[ LATENCY ] ZERO_TOLERANCE</span>
+                    <span>[ NODE ] MID_MARKET_MFG</span>
+                </div>
+                <div class="flex gap-8 text-slate-600">
+                    <span class="hover:text-brand-500 transition-colors cursor-default">PROCESS AUTOMATION</span>
+                    <span class="hover:text-brand-500 transition-colors cursor-default">SYSTEM ARCHITECTURE</span>
+                    <span class="hover:text-brand-500 transition-colors cursor-default">INTELLIGENT PIPELINES</span>
+                    <span class="hover:text-brand-500 transition-colors cursor-default">AI AUTOMATION</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethos / Manifesto -->
+    <section id="ethos" class="py-40 bg-navy-975 relative overflow-hidden">
+        <!-- Abstract glowing blur -->
+        <div class="absolute top-1/2 right-0 w-[500px] h-[500px] bg-brand-900/20 blur-[150px] rounded-full transform -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute -left-40 bottom-0 w-[400px] h-[400px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 relative">
+                    <!-- Giant background typography -->
+                    <h2 class="text-[8rem] md:text-[12rem] font-display font-black text-white/[0.02] absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-12 select-none pointer-events-none">ETHOS</h2>
+                    <h3 class="text-4xl md:text-6xl font-display font-bold text-white leading-tight mb-8 relative z-10">
+                        Process-First.<br>
+                        <span class="text-brand-400">Technology-Second.</span>
+                    </h3>
+                </div>
+                
+                <div class="lg:col-span-7 glass-brand p-10 md:p-14 relative drop-shadow-2xl hover:border-brand-500/30 transition-colors duration-700">
+                    <!-- Tech corners -->
+                    <div class="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-brand-500"></div>
+                    <div class="absolute -bottom-1 -left-1 w-6 h-6 border-b-2 border-l-2 border-brand-500"></div>
+                    
+                    <div class="space-y-8 text-xl font-light text-slate-300 leading-relaxed">
+                        <p>
+                            We aren't just developers pushing tickets. We are specialized solutions architects. For a decade, mid-market businesses have been sold bloated software that ignores the chaotic organic reality of daily operations.
+                        </p>
+                        <p>
+                            <span class="text-white font-medium">Applying new technology to a broken process just makes it break faster.</span> That is why we start with a ruthless business audit. We find the spreadsheet silos. We find the double-entry workarounds. We map it, fix the logic, and only then do we leverage AI and automation to scale the architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities / Staggered Layout -->
+    <section id="capabilities" class="py-40 bg-navy-950 border-y border-white/[0.03] relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-32 flex flex-col md:flex-row justify-between items-end gap-12">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[2px] w-12 bg-brand-500 shadow-[0_0_10px_rgba(249,181,42,0.8)]"></div>
+                        <span class="text-brand-500 text-xs font-mono font-bold tracking-widest uppercase">Capabilities</span>
+                    </div>
+                    <h3 class="text-5xl md:text-6xl font-display font-black text-white tracking-tight">Eliminate <br/>Operational Friction.</h3>
+                </div>
+                <div class="text-slate-400 font-mono text-sm max-w-sm uppercase tracking-wider leading-loose border-l border-white/10 pl-6">
+                    Targeted technological interventions engineered exclusively for scalability and automation.
+                </div>
+            </div>
+
+            <!-- Staggered Vertical List -->
+            <div class="space-y-0">
+                
+                <!-- 01 -->
+                <div class="grid md:grid-cols-12 gap-8 items-center group py-16 border-t border-white/[0.05] hover:bg-white/[0.02] transition-colors duration-500">
+                    <div class="md:col-span-2 text-7xl md:text-8xl font-display font-black text-navy-800 transition-colors duration-500 group-hover:text-brand-500/20 group-hover:-translate-y-2 transform relative">
+                        01
+                    </div>
+                    <div class="md:col-span-3 h-[2px] bg-navy-800 group-hover:bg-brand-500/50 transition-colors duration-500 hidden md:block"></div>
+                    <div class="md:col-span-7 pl-0 md:pl-8">
+                        <h4 class="text-3xl font-display font-bold text-white mb-6 flex items-center gap-4">
+                            The Process Debt Audit
+                        </h4>
+                        <p class="text-slate-400 font-light text-lg leading-relaxed max-w-2xl">
+                            We map your physical workflows against your digital endpoints to find the leaks. We identify where your staff is creating manual workarounds, tracking inventory in unapproved spreadsheets, and duplicating data entry. Then, we architect the autonomous fix.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="grid md:grid-cols-12 gap-8 items-center group py-16 border-t border-white/[0.05] hover:bg-white/[0.02] transition-colors duration-500">
+                    <div class="md:col-span-2 text-7xl md:text-8xl font-display font-black text-navy-800 transition-colors duration-500 group-hover:text-brand-500/20 group-hover:-translate-y-2 transform">
+                        02
+                    </div>
+                    <div class="md:col-span-3 h-[2px] bg-navy-800 group-hover:bg-brand-500/50 transition-colors duration-500 hidden md:block"></div>
+                    <div class="md:col-span-7 pl-0 md:pl-8">
+                        <h4 class="text-3xl font-display font-bold text-white mb-6 flex items-center gap-4">
+                            Autonomous System Architecture
+                        </h4>
+                        <p class="text-slate-400 font-light text-lg leading-relaxed max-w-2xl">
+                            Standard platforms bottleneck growth. We construct specialized, autonomous systems and custom AI deployments that actually adapt to the physical realities of your operations, turning manual bottlenecks into seamless digital velocity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="grid md:grid-cols-12 gap-8 items-center group py-16 border-y border-white/[0.05] hover:bg-white/[0.02] transition-colors duration-500">
+                    <div class="md:col-span-2 text-7xl md:text-8xl font-display font-black text-navy-800 transition-colors duration-500 group-hover:text-brand-500/20 group-hover:-translate-y-2 transform">
+                        03
+                    </div>
+                    <div class="md:col-span-3 h-[2px] bg-navy-800 group-hover:bg-brand-500/50 transition-colors duration-500 hidden md:block"></div>
+                    <div class="md:col-span-7 pl-0 md:pl-8">
+                        <h4 class="text-3xl font-display font-bold text-white mb-6 flex items-center gap-4">
+                            Intelligent Interoperability
+                        </h4>
+                        <p class="text-slate-400 font-light text-lg leading-relaxed max-w-2xl">
+                            We shatter data silos. We construct high-availability data pipelines that allow disparate legacy systems, machine end-points, and modern AI agents to communicate natively in real-time. No more waiting for End-of-Day batch runs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact / Stats -->
+    <section id="impact" class="pt-32 pb-40 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-center text-3xl font-display font-bold text-white mb-20">Battle-tested architecture.</h3>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+                
+                <div class="border-t border-brand-500/30 pt-6">
+                    <div class="text-5xl font-display font-black text-white mb-2">15<span class="text-brand-500">+</span></div>
+                    <div class="text-xs font-mono text-slate-500 tracking-widest uppercase">Years Experience</div>
+                </div>
+                
+                <div class="border-t border-brand-500/30 pt-6">
+                    <div class="text-5xl font-display font-black text-white mb-2">10M<span class="text-brand-500">+</span></div>
+                    <div class="text-xs font-mono text-slate-500 tracking-widest uppercase">Rows ETL'd Daily</div>
+                </div>
+                
+                <div class="border-t border-brand-500/30 pt-6">
+                    <div class="text-5xl font-display font-black text-white mb-2">30<span class="text-brand-500">+</span></div>
+                    <div class="text-xs font-mono text-slate-500 tracking-widest uppercase">Facilities Online</div>
+                </div>
+                
+                <div class="border-t border-brand-500/30 pt-6">
+                    <div class="text-5xl font-display font-black text-white mb-2">100<span class="text-brand-500">%</span></div>
+                    <div class="text-xs font-mono text-slate-500 tracking-widest uppercase">Adoption Rate</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Giant Footer / Contact -->
+    <section id="contact" class="bg-brand-500 text-navy-975 relative overflow-hidden">
+        <!-- Abstract gear graphic for footer -->
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 border-[40px] border-brand-600/30 rounded-full border-dashed opacity-50 select-none pointer-events-none animate-[spin_60s_linear_infinite]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 py-32 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-6xl md:text-[5rem] font-display font-black leading-[0.9] mb-10 tracking-tight">
+                        Ready to extract<br>real value from<br>your data?
+                    </h2>
+                    <p class="text-xl font-medium opacity-80 mb-16 max-w-lg leading-relaxed">
+                        Give us 30 minutes. We'll deploy an initial review to identify at least two massive process leaks actively bottlenecking your ability to scale.
+                    </p>
+                    
+                    <div class="space-y-6 font-mono text-sm uppercase tracking-widest font-bold">
+                        <div class="flex items-center gap-4">
+                            <div class="w-2 h-2 bg-navy-950 rounded-full animate-pulse shadow-[0_0_10px_rgba(10,15,24,0.5)]"></div>
+                            audit@cornerstoneautomations.com
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-navy-950/20 pt-6">
+                            <svg class="w-5 h-5 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            US-Based Solutions Architecture
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Minimal Form -->
+                <div class="bg-navy-975 p-12 shadow-[0_40px_100px_rgba(0,0,0,0.5)] relative">
+                    <!-- Subtle corner acccent -->
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-500" style="clip-path: polygon(100% 0, 0 0, 100% 100%);"></div>
+                    
+                    <h3 class="text-white font-display font-bold text-3xl mb-10">System Initialization</h3>
+                    
+                    <!-- Floating Label Form approach -->
+                    <form class="space-y-8" onsubmit="event.preventDefault(); alert('Audit request initialized.');">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="relative group">
+                                <input type="text" id="fn" class="peer w-full border-b-2 border-slate-700 bg-transparent py-2 text-white font-medium focus:border-brand-500 outline-none transition-colors placeholder-transparent" placeholder="First Name" required />
+                                <label for="fn" class="absolute left-0 -top-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:top-2 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-500">First Name</label>
+                            </div>
+                            <div class="relative group">
+                                <input type="text" id="ln" class="peer w-full border-b-2 border-slate-700 bg-transparent py-2 text-white font-medium focus:border-brand-500 outline-none transition-colors placeholder-transparent" placeholder="Last Name" required />
+                                <label for="ln" class="absolute left-0 -top-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:top-2 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-500">Last Name</label>
+                            </div>
+                        </div>
+                        
+                        <div class="relative group">
+                            <input type="email" id="em" class="peer w-full border-b-2 border-slate-700 bg-transparent py-2 text-white font-medium focus:border-brand-500 outline-none transition-colors placeholder-transparent" placeholder="Email" required />
+                            <label for="em" class="absolute left-0 -top-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:top-2 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-500">Corporate Email</label>
+                        </div>
+                        
+                        <div class="relative group">
+                            <input type="text" id="erp" class="peer w-full border-b-2 border-slate-700 bg-transparent py-2 text-white font-medium focus:border-brand-500 outline-none transition-colors placeholder-transparent" placeholder="Current System" />
+                            <label for="erp" class="absolute left-0 -top-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:top-2 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-brand-500">Current Legacy Stack constraint</label>
+                        </div>
+                        
+                        <div class="relative pt-4 group">
+                            <textarea id="msg" rows="3" class="peer w-full border-b-2 border-slate-700 bg-transparent py-2 text-white font-medium focus:border-brand-500 outline-none transition-colors placeholder-transparent resize-none" placeholder="Friction point"></textarea>
+                            <label for="msg" class="absolute left-0 top-0 text-[10px] font-bold text-slate-500 uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:top-6 peer-focus:top-0 peer-focus:text-[10px] peer-focus:text-brand-500">Biggest Operational Friction Point</label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-400 text-navy-950 font-black tracking-widest uppercase text-sm py-5 transition-colors mt-8">
+                            Deploy Audit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-navy-950/20 py-10 relative z-10 bg-brand-600/10">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-4">
+                    <img src="logo.png" alt="Logo" class="h-8 w-auto brightness-0">
+                    <span class="font-display font-black text-xl tracking-widest">CORNERSTONE</span>
+                </div>
+                <div class="text-[10px] font-mono font-bold opacity-70 tracking-widest">
+                    &copy; <span id="year"></span> CORNERSTONE AUTOMATIONS. ALL SYSTEMS RUNNING.
+                </div>
+                <div class="flex gap-6 text-[10px] font-bold uppercase tracking-widest opacity-80">
+                    <a href="#" class="hover:text-white transition-colors">LinkedIn Node</a>
+                    <a href="#" class="hover:text-white transition-colors">Data Protocol</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Advanced Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-navy-975/95', 'shadow-2xl');
+                nav.classList.remove('glass');
+            } else {
+                nav.classList.add('glass');
+                nav.classList.remove('bg-navy-975/95', 'shadow-2xl');
+            }
+        });
+    </script>
+</body>
+</html>
